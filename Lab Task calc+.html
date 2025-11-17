@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+
+    <h2>Calculator</h2>
+
+    <input id="input1" type="number" placeholder="Enter your first number">
+    <br><br>
+
+    <input id="input2" type="number" placeholder="Enter your second number">
+    <br><br>
+
+    <button onclick="add()">Add</button>
+
+    <h3>Result: <span id="result"></span></h3>
+
+    <script>
+        function add() {
+            let a = Number(document.getElementById("input1").value);
+            let b = Number(document.getElementById("input2").value);
+            document.getElementById("result").textContent = a + b;
+        }
+    </script>
+
+</body>
+</html>
